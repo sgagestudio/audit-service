@@ -1,0 +1,22 @@
+server:
+    port: 8080
+
+spring:
+    application:
+        name: audit-service
+
+    mail:
+        host: smtp-relay.brevo.com
+        port: 587
+        username: 919e67002@smtp-brevo.com
+        password: ${MAIL_PASSWORD}
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+
+    ai:
+        openai:
+            api-key: ${OPEAN_AI_KEY}
